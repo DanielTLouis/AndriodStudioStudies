@@ -41,3 +41,14 @@ Setup Andriod Studio (Pathway 2)
           * to view this way select the "Andriod" dropdown and select "project sourse files" in the project directory window
           * we use Andriod view for this course 
             * so use that to follow along   
+        * we will modify the text of this App 
+          * in code window 
+          * the main Activity funciton works as main 
+            * where Kitlin compiler starts 
+            * in andriod apps the OnCreate funciton fills that file so we override main
+          * Difference between regular & composed function
+            1. the naming convention is different because @Composable function names are capitalized 
+              * @Composable
+              * fun Greedting(name:String)
+            2. you add the @Composable annotation before the function 
+            3.   
