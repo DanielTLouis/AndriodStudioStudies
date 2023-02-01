@@ -101,4 +101,34 @@ Setup Andriod Studio (Pathway 2)
        10. click build and refresh 
           * should show "helloe, andriod!" 
    * 4. Find project files
-       1,         
+       1. look at the project tab
+       2. if necessary, select "Andriod" from the drop-down menu in the project tab
+       3. select "project source files" to view them liek they would apear in windows explorer
+       4. make sre "Andriod" is selected fomr the drop=down menu
+       5. update the text
+          * look at the code of MainActivity.kt file. Native there are some automatically generated function in this code, specifally. the onCreate() and the setContext functions 
+              1. class MainActivity : componentActivity() { 
+              2.  override fun onCreate(saveInstanceState : Bundle?){
+              3.    super.onCreate(saveInstanceState)
+              4.    setContent{
+              5.       GreetingCardTheme{
+              6.         //A surface container using "background." color from the theme
+              7.         surface(
+              8.             modifier = Modifier.fillMaxSze(),
+              9.             color = MataialTheme.colorsbackground
+              10.         ){
+              11.            Greeting("Andriod")
+              12.         }
+              13.      }
+              14.   }
+              15.  }
+              16. }    
+           * the onCreate function is the empty point to this app and calls oteher functions to build the user interface. ln Kotlin program, the Main() fucitno is the Specific place in your code where Kotlin compiler starts in Andriod apps the onCreate() funcitno fills that role
+           * the setContenet() function within the onCreate() function is used to define your layout through compoable functions. All functions marked with the @Composeable annotation can be called from the setContent() function or from other composable functions. the annotation tells the Kotlin compiler that this function is used by jetpack compose to generate the ui. 
+           * notes: the compiler takes the Kotlin code you wrote, looks at it line by line, and translates it into something that the compiler can unserstand. this process is called compiling your code
+           * next look at the Greeting() function. the Greeting() function is a composable function, notice the @composable annotation above it. A composable function takes some imput and generates what's shown on the screen. 
+              1.@composeable
+              2.fun Greeting(name : String){
+              3.  Text(text = "Hello $name !")
+              4.}
+           *   
