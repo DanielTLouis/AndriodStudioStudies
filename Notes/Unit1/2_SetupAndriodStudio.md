@@ -131,4 +131,33 @@ Setup Andriod Studio (Pathway 2)
               2.fun Greeting(name : String){
               3.  Text(text = "Hello $name !")
               4.}
-           *   
+           *  you've learned about functions before (if you need a refresher, go back a pathway), but there are a few difference with composable funcitons
+             * @Composable function names are capitalized 
+             * you add the @Composable annotation before the function 
+             * @compoable function can't return anything 
+           * right now the Greeting() funcitons takes in a name and displays Hello to that person
+             1.update the Greeting() function to introduce yourself instead of saying "Hello":
+                 1.@Composable
+                 2.fun Greeting(name : String){
+                 3.  Text(text="Hi, My name is $name !")
+                 4.}   
+             2.rebuild the defualt preview by pressing the rebuild button on the top. left of the design pane:
+                 * Hi, my name is Andriod!
+         * Great! you changed the text, but it introduces you are Andriod, which is probably not your name. Next, you will personalize it to introduce you with your name!
+           * the DefualtPreview() function is a cool function that lets you see what your app looks like without having to build your entire app. in order to be a preview function, you need to add a @Preview annotation
+           * as yu can see, the @preview annotation takes in a paramater called showBackgounrd. if showBackground is set to true, it will addabackground to your app preview
+           * Since Andriod Studio by defualt uses a lgiht theme for the editor, it can be hard to see the difference between showbackground = true and showbackgroud = false. However, this is what the difference looks liek with a dark theme. Notice the white background on the image set to true
+                * It is matched to the background of the phone
+              3.update the DefualtPreview() function with your name. then rebuild and check out your personalized greeting card.
+                 1.@preview(ShowBackground=true)
+                 2.@Composable
+                 3.fun DefualtPreview(){
+                 4.  GreetingCardTheme{
+                 5.     Greeting("Meghan")
+                 6.   }
+                 7. }
+                 * defualt preview
+                   * Hi, my name is Meghan!
+       6.change the backGround color
+          * now you have the introduction text, but it is a little boring! now you learn to chanve the background coo"
+          * to set a different background color for your introductions you'll need to surround your text a with a surface. A surface is container that represent a section a section of UI where you can alter  
