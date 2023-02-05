@@ -222,10 +222,29 @@ Setup Andriod Studio (Pathway 2)
               6.}
               * you build your first Andriod app in compose! this is a pretty huge accomplishment
          8. Review the solution code
-            1.import andriod.os.Bundle
-            2.import andriodx.activity.ComponentActivity 
-            3.import andriodx.activity.compose.SetContnet
-            4.import sndriodx.compose.foundation.layout.padding
-            5.import andriodx.compose,material.materialTime
-            6.import andriodx.compose.material.Surfaceimport andriod.compose.material.Text
-            7.
+            1.  import andriod.os.Bundle
+            2.  import andriodx.activity.ComponentActivity 
+            3.  import andriodx.activity.compose.SetContnet
+            4.  import sndriodx.compose.foundation.layout.padding
+            5.  import andriodx.compose,material.materialTime
+            6.  import andriodx.compose.material.Surfaceimport andriod.compose.material.Text
+            7.  import andriodx.compose.runtime.Composable
+            8.  import amdriodx.compose.ui.Modifier
+            9.  import andriodx.compose.ui.graphics.Color 
+            10. import andriodx.compose.ui.tooling.preview.Preview
+            11. import andriodx.compose.ui.united
+            12. import com.example.myapp.ui.theme.GreetingCardTheme
+            13. 
+            14. class MainActivity : ComponentActivity(){
+            15.   override fun onCreate(savedInstanceState : Bundle){
+            16.     Super.onCreate(SavedInstanceState)
+            17.     setContent{
+            18.        GreetingCardTheme{
+            19.          //A Surface container that uses the background color fomr the theme
+            20.          Surface(color = MaterialTheme.colors.background){
+            21.             Greeting("Andriod")
+            22.          }
+            23.        }
+            24.     }
+            25.   }
+            26. } 
