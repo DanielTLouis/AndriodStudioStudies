@@ -248,3 +248,24 @@ Setup Andriod Studio (Pathway 2)
             24.     }
             25.   }
             26. } 
+            27. @Composable
+            28. fun Greeting(name : String){
+            29.    Surface(color = Color.Magenta){
+            30.       Text(text = "Hi, my name is $name !", modifier = Modifier.padding(24.dp))
+            31.    }
+            32. }
+            33. @Preview(ShowBackground = true)
+            34. @Composable
+            35. fun DefualtPreview(){
+            36.    GreetingCardTheme{
+            37.       Greeting("Megenta")
+            38.    }
+            39. }
+         9. Conclusion 
+            * Summary
+              * to create a new project: open Andriod Studio click new project > Empty Compose Activity > Next, enter your name 
+              * 
+* Run your first app on the Emulator
+   1. Before you Begin 
+   2. watch the code-along video
+      * 
