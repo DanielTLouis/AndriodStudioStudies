@@ -160,4 +160,72 @@ Setup Andriod Studio (Pathway 2)
                    * Hi, my name is Meghan!
        6.change the backGround color
           * now you have the introduction text, but it is a little boring! now you learn to chanve the background coo"
-          * to set a different background color for your introductions you'll need to surround your text a with a surface. A surface is container that represent a section a section of UI where you can alter  
+          * to set a different background color for your introductions you'll need to surround your text a with a surface. A surface is container that represent a section a section of UI where you can alter the appearance, such as the background color or border
+             1. to surround the text with a surface, highlight the line of text, press (Alt + Enter for winfows or option + enter for macs). and then select surround with widget
+             2. choose surround with container 
+           * the defualt container it will give you is Box, but you can change this to another container type
+              1.@Composable
+              2.fun Greeting(name : String){
+              3.  Box{//this : BoxScope
+              4.     Text(text="Hello, $name !")
+              5.  }
+              6. }
+             3.Delect Box and type Surface() instead 
+               1.@Composable
+               2.fun Greeting(name : String){
+               3.  Surface(){
+               4.     Text(text="Hello, $name !")
+               5.  }
+               6. }
+              4.The Surface container has a color paramater, set it to color
+                1.@Composable
+                2.fun Greeting(name : String){
+                3.  Surface(color=Color){
+                4.     Text(text="Hello, $name !")
+                5.  }
+                6. }
+              5.When you type color you may notice that it is red and underlined. To solve this scroll to the top of the file where it says import and press the three buttons 
+                 * import...
+              6.add this statement to the bottom of the list of imports 
+                 * import andriodx.compose.ui.graphics.color
+           * the fall list of imports will look like this"
+                 1.import andriod.os.Bundle
+                 2.import andriodx.activity.componentActivity
+                 3.import andriodx.activity.compose.SetContent
+                 4...
+              7. in your code, the best practive is to keep your import list alphabetically. To do this press Help on the top toolbar, type in optimize import, and click on optimize imports 
+            * the fall list is now in alphabetical order
+              8. notice that the color that you typed in the surface parentheses has switched from being red and underline to being underline in red. to fix that, add a period after it. you will see a pop-up showing different color options
+            * this is one of the cool features in Andriod Studio. It is intelligent and will help you out when it can. In this case it knows you are wanting to specify a color so it will suggest different colors
+              9. choose a color for your surface. This codelab uses magente, but you can choose your fav!
+                 1.@Composable
+                 2.fun Greeting(name : String){
+                 3.  Surface(color=Color.magenta){
+                 4.     Text(text="Hi, my name is $name !")
+                 5.  }
+                 6.}
+              10. click Build & Refreash your text is surounded by the color that you choose
+       7. Add padding
+          *  Now your text has a background color, next you wil add some space (padding) around the text
+          *  a modifier is used to argument or decorate a composable. One modifier you can use is the padding modifier, which applies space around the element (in this case, adding space around the text). Tis is accoplishhing by using the modifier.padding() function 
+          1. add these imports to the import statemenrs section
+             * make sure to use optimize imports to alphabetize the new imports
+                1.import andriox.compose.ui.unit.dp
+                2.import andriodx.compose.function.layout.padding
+           2. Add a padding modifier to the text with a size of 24 dp. click build and refreash 
+              * Note: you learn more about density-independent pixels (dp) in the next pathway
+              1.@Compose
+              2.fun Greeting(name : String){
+              3.  Surface(color = Color.Magenta){
+              4.    Text(text="Hi, $name !", modifire = Modifier.padding(24.dp))
+              5.  }
+              6.}
+              * you build your first Andriod app in compose! this is a pretty huge accomplishment
+         8. Review the solution code
+            1.import andriod.os.Bundle
+            2.import andriodx.activity.ComponentActivity 
+            3.import andriodx.activity.compose.SetContnet
+            4.import sndriodx.compose.foundation.layout.padding
+            5.import andriodx.compose,material.materialTime
+            6.import andriodx.compose.material.Surfaceimport andriod.compose.material.Text
+            7.
