@@ -268,4 +268,22 @@ Setup Andriod Studio (Pathway 2)
 * Run your first app on the Emulator
    1. Before you Begin 
    2. watch the code-along video
-      * 
+      * in Andriod Studio next to the play button there is an option for a device 
+        * click on that to see the dropdown menu
+        * choose device manager
+        * click create device 
+          * choose phose 
+          * choose API (highest one with a letter)
+   3. Run your app on the Andriod Emulator 
+      * create a AVD
+        * To run an andriod app in an emulator on your computer, your first create a virtual device 
+        1. in Andriod Studio, select Tools -> Device Manager
+        * Device Manager dialog opens if you created a virtual device previously, it's listed in this dialog 
+        2. click create virtual Device 
+        * the virtual device configuration diolog appears 
+        * the dialog shows a list of pre-configured devices organized by catagory, from which you can choose, For each device the tble provides a column for its display size (in inches). Screen resolution (in pixels), and pixel density (number of pizels per inch).
+        3. select phone as catagory 
+        4. select a phone, such as the pixel 5, and then click next. 
+        * ths step opens another screen where you can choose the version of Andriod to run on your virtual device. This lets you test your app on different versions of andriod
+        5. if there is a download link next to S.click download -> accept -> next -> finish. the presence of the download link indicates that the image isn't installed on your computer, in which case you must install the image before you can configure the virtual device expet the download to take some time ito complete.
+        6.  
