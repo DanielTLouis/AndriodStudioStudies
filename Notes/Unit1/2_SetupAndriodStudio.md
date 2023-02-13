@@ -286,4 +286,32 @@ Setup Andriod Studio (Pathway 2)
         4. select a phone, such as the pixel 5, and then click next. 
         * ths step opens another screen where you can choose the version of Andriod to run on your virtual device. This lets you test your app on different versions of andriod
         5. if there is a download link next to S.click download -> accept -> next -> finish. the presence of the download link indicates that the image isn't installed on your computer, in which case you must install the image before you can configure the virtual device expet the download to take some time ito complete.
-        6.  
+        6.  in the recommended tab, choose S as the version of Andriod to run the virtual device
+        * Andriod S is the latest version of Andriod at the time of writing, but you can choose any later stable version,
+        * this action opens another screen, where you can choose additional configuration details for your device.
+        7. in the AVD name feild, enter a name for your AVD or use the defualt. leave the rest of the feields unchanged 
+        8. click finish
+        * this action retain to the Andriod Virtual Device manager pane
+        9. close the device manager dialog 
+    * run your app on the Andriod Emulator
+        1. select the virtual device that you created from the dropdown menu at the top of the avdriod Studio window
+        2. click play button
+        * the virtual device starts ust like a physical device. expect this to take a while-potentially serveral minutes - for the emulator to start for the first time. the virtual device should open beside the code editor
+        * when your app is ready. it opens on the virtual device 
+        * should see your app now
+    * conclusion
+  5. How to connect your andriod device
+     1. Before you begin
+     2. watch the code-along video
+        * run your app on andriod device 
+          * with cable or wifi
+        * enable usb developer debugging on the device 
+          * settings -> about phone 
+          * tap build number 7 times 
+            * should see a you are now a developer message
+            * go to system -> developer options 
+              * make sure usb internal toggle is enabled 
+           * in Andriod Studio 
+             *  Dropdown the manu next the play buttom 
+               * find your device & press play
+     3. 
