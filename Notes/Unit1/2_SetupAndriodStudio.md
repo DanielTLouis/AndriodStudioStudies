@@ -314,4 +314,20 @@ Setup Andriod Studio (Pathway 2)
            * in Andriod Studio 
              *  Dropdown the manu next the play buttom 
                * find your device & press play
-     3. 
+     3. Enable USB debugging 
+        * to let Andriod Studio communicate with you Andriod device, you must enable usb debbuging in the device per options setting of the device. 
+        * to show developer options and enable usb debugging
+           1. on your Andriod device, tap setting->About phone 
+           2. tab build number seven times 
+           3. if promted, enter your device password or pin. you knwo you succeeded when you see a "you are now a developer!" message
+           4. return to settings and then tap system -> developer optaions
+           5. if you don't see developer optaions, tap Andriod options 
+           6. tap Developer options and then tap the usb debugging toggle to turn it on
+         * install the google usb driver (windows only)
+           * if you install Andriod Studio on windows, you must install a usb device before you can run your app on a physical devie
+             1. in Andriod Studio, click Tools->SDK manager, the Preference->Appearance & Behavior system. 
+             2. click the SDK Tools tab
+             3. select Google usb driver and then choose ok
+           * when done, the driver files are downloading into the andriod_sdk\extras\google\usb_driver directory. Now you can connect and run your app from Andriod studio
+      4. Run your app on the Andriod deviece with a cable 
+         * there are two ways to connect your device to Android studio, through wifi, you can choose whichever you like more.   
